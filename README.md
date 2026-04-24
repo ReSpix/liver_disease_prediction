@@ -3,7 +3,7 @@
 На основе датасета: \
 https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset
 
-Использованы методы:
+**Использованы методы**:
 - One Rule
 - Линейная регрессия
 - KNN
@@ -14,7 +14,7 @@ https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset
 - MLP
 - Ансамбль моделей
 
-Получены результаты (отсортированы по точности):
+**Получены результаты** (отсортированы по точности):
 
 | Модель   | Точность |
 | -------- | -------- |
@@ -32,3 +32,5 @@ https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset
 | LinearSVC | 0.755 ± 0.003 |
 | BernoulliNB | 0.698 ± 0.084 |
 | OneRClassifier |0.507 ± 0.002 |
+| Предсказание самого частого класса | 0.360 |
+| Случайное предсказание | 0,166 |
