@@ -1,7 +1,6 @@
 ## Предсказание заболеваний печени
 
-На основе датасета: \
-https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset
+На основе датасета: [Indian Liver Disease Dataset (Kaggle)](https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset)
 
 **Использованы методы**:
 - One Rule
