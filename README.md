@@ -14,6 +14,10 @@ https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset
 - MLP
 - Ансамбль моделей
 
+**Критерии оцени моделей**
+
+Для обучения использовался `StratifiedKFold(n_splits=5, shuffle=True)`. Качеством модели считается средний `accuracy` по всем фолдам
+
 **Получены результаты** (отсортированы по точности):
 
 | Модель   | Точность |
@@ -33,4 +37,4 @@ https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset
 | BernoulliNB | 0.698 ± 0.084 |
 | OneRClassifier |0.507 ± 0.002 |
 | Предсказание самого частого класса | 0.360 |
-| Случайное предсказание | 0,166 |
+| Случайное предсказание | 0.166 |
