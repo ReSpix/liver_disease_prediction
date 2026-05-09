@@ -34,3 +34,10 @@ https://www.kaggle.com/datasets/paramjeetsinghds/indian-liver-disease-dataset
 | OneRClassifier |0.507 ± 0.002 |
 | Предсказание самого частого класса | 0.360 |
 | Случайное предсказание | 0,166 |
+
+### Запуск
+```bash
+git clone https://github.com/ReSpix/liver_disease_prediction.git
+cd liver_disease_prediction/
+uv sync
+```
