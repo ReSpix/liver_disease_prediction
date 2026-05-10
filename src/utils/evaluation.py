@@ -9,7 +9,7 @@ from sklearn.metrics import f1_score
 
 def evaluate_pipeline(
     pipeline: Pipeline, X, y, *, additional: str | None = None, verbose: bool = False
-) -> list:
+) -> list | None:
     skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
     scores = {"f1-macro": [], "f1-weighted": []}
@@ -62,4 +62,5 @@ def evaluate_pipeline(
     plt.xticks(rotation=45, ha="right")
     plt.show()
 
-    return additional_list
+    if additional:
+        return additional_list
