@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from dataclasses import dataclass
 
 
@@ -18,3 +19,13 @@ def column_type_split(df: pd.DataFrame) -> Columns:
     binary_cols = [col for col in number_cols if len(df[col].unique()) == 2]
 
     return Columns(cat_cols, numeric_cols, binary_cols)
+
+
+def feature_importance_df(feature_importance: pd.DataFrame, names, *, use_abs = False) -> pd.DataFrame:
+    mean_importance = np.abs(feature_importance).mean(axis=0)
+
+    importance_df = pd.DataFrame(
+        {"feature": names, "importance": mean_importance}
+    ).sort_values("importance", ascending=False)
+
+    return importance_df
